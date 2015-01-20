@@ -7,8 +7,8 @@ include RethinkDB::Shortcuts
 set :bind, '0.0.0.0'
 set :port, 3000
 
-# your code here
-
 get "/" do
   "Hello Rethink!"
 end
+
+# your code here
