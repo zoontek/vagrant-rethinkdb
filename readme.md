@@ -4,6 +4,8 @@
 
 Actually, RethinkDB is only available on Ubuntu, OSX, CentOS and Debian. So, if you want to give it a try, you should download [Virtualbox](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com/).
 
+This installs Ruby, Python and JS RethinkDB drivers + Sinatra, Flask and ExpressJS.
+
 ## Usage
 
 ```bash
@@ -12,7 +14,32 @@ cd vagrant-rethinkdb
 vagrant up
 ```
 
-**NOTE:** RethinkDB autostarts with the Vagrant box.
+```bash
+vagrant ssh
+```
+
+Start RethinkDB
+```bash
+rethinkdb --bind all &
+```
+
+Launch ExpressJS server
+```bash
+cd shared/express
+nodejs index.js
+```
+
+Launch Sinatra server
+```bash
+cd shared/sinatra
+ruby index.rb
+```
+
+Launch Flask server
+```bash
+cd shared/flask
+python index.py
+```
 
 ## Port forwarding
 

@@ -1,6 +1,17 @@
+# OSX
 .AppleDouble
 .DS_Store
 ._*
 .project
 .settings
+
+# Vagrant
 .vagrant*
+
+# RethinkDB
+shared/express/rethinkdb_data
+shared/flask/rethinkdb_data
+shared/sinatra/rethinkdb_data
+
+# NodeJS
+shared/express/node_modules
