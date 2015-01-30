@@ -12,9 +12,6 @@ This installs Ruby, Python and JS RethinkDB drivers + Sinatra, Flask and Express
 git clone https://github.com/zoontek/vagrant-rethinkdb.git
 cd vagrant-rethinkdb
 vagrant up
-```
-
-```bash
 vagrant ssh
 ```
 
