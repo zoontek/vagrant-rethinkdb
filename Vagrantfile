@@ -20,12 +20,12 @@ sudo apt-get update
 
 # Install languages packages
 sudo apt-get -y install python2.7 python2.7-dev python-pip
-sudo apt-get -y install ruby2.1 ruby2.1-dev ruby-switch
+sudo apt-get -y install ruby2.2 ruby2.2-dev ruby-switch
 sudo apt-get -y install nodejs npm
 sudo apt-get -y install rethinkdb
 
-# Switch to ruby 2.1
-sudo ruby-switch --set ruby2.1
+# Switch to ruby 2.2
+sudo ruby-switch --set ruby2.2
 
 # Install micro-frameworks + RethinkDB drivers
 sudo pip install flask rethinkdb
