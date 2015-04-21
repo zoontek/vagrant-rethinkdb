@@ -1,13 +1,8 @@
 {
-  "name": "rethinkdb-playground",
-  "version": "0.0.1",
-  "description": "Try RethinkDB with Express",
   "main": "index.js",
-  "license": "BSD-2-Clause",
   "private": true,
   "dependencies": {
-    "express": "~4.10.8",
-    "rethinkdb": "~1.15.0"
-  },
-  "devDependencies": {}
+    "express": "^4.12.3",
+    "rethinkdb": "^2.0.0"
+  }
 }
