@@ -1,3 +1,8 @@
+# Documentation
+# -------------
+# http://flask.pocoo.org/docs/
+# http://www.rethinkdb.com/api/python/
+
 from flask import Flask
 import rethinkdb as r
 

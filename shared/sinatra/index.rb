@@ -1,3 +1,8 @@
+# Documentation
+# -------------
+# http://www.sinatrarb.com/documentation.html
+# http://www.rethinkdb.com/api/ruby/
+
 require "rubygems"
 require "sinatra"
 require "rethinkdb"

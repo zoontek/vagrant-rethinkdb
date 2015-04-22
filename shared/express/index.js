@@ -1,3 +1,8 @@
+// Documentation
+// -------------
+// http://expressjs.com/api.html
+// http://www.rethinkdb.com/api/javascript/
+
 var express = require("express");
 var r = require("rethinkdb");
 var app = express();
