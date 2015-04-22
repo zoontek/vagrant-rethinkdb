@@ -1,8 +1,0 @@
-{
-  "main": "index.js",
-  "private": true,
-  "dependencies": {
-    "express": "^4.12.3",
-    "rethinkdb": "^2.0.0"
-  }
-}

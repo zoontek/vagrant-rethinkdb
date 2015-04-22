@@ -16,26 +16,12 @@ locale-gen en_US.UTF-8
 source /etc/lsb-release && echo "deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main" | sudo tee /etc/apt/sources.list.d/rethinkdb.list
 wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add -
 
-# Add Ruby repository
-sudo apt-add-repository -y ppa:brightbox/ruby-ng
-
 # Update packages list
 sudo apt-get update
 
-# Install languages packages
-sudo apt-get -y install python-pip
-sudo apt-get -y install ruby2.2 ruby-switch
-sudo apt-get -y install nodejs npm
+# Install RethinkDB package
 sudo apt-get -y install rethinkdb
 
-# Switch to ruby 2.2
-sudo ruby-switch --set ruby2.2
-
-# Install micro-frameworks + RethinkDB drivers
-sudo pip install flask rethinkdb
-sudo gem install sinatra rethinkdb
-cd /home/vagrant/shared/express
-sudo npm install
 # Copy the config file
 sudo cp /home/vagrant/shared/default.conf /etc/rethinkdb/instances.d/default.conf
 SCRIPT
