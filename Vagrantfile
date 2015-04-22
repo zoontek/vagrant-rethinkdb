@@ -24,6 +24,7 @@ sudo apt-get -y install rethinkdb
 
 # Copy the config file
 sudo cp /home/vagrant/shared/default.conf /etc/rethinkdb/instances.d/default.conf
+sudo /etc/init.d/rethinkdb restart
 SCRIPT
 
 Vagrant.configure(2) do |config|
