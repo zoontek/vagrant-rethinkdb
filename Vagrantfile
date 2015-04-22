@@ -36,6 +36,8 @@ sudo pip install flask rethinkdb
 sudo gem install sinatra rethinkdb
 cd /home/vagrant/shared/express
 sudo npm install
+# Copy the config file
+sudo cp /home/vagrant/shared/default.conf /etc/rethinkdb/instances.d/default.conf
 SCRIPT
 
 Vagrant.configure(2) do |config|
