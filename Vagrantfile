@@ -19,8 +19,8 @@ sudo apt-add-repository -y ppa:brightbox/ruby-ng
 sudo apt-get update
 
 # Install languages packages
-sudo apt-get -y install python2.7 python2.7-dev python-pip
-sudo apt-get -y install ruby2.2 ruby2.2-dev ruby-switch
+sudo apt-get -y install python-pip
+sudo apt-get -y install ruby2.2 ruby-switch
 sudo apt-get -y install nodejs npm
 sudo apt-get -y install rethinkdb
 
@@ -29,9 +29,9 @@ sudo ruby-switch --set ruby2.2
 
 # Install micro-frameworks + RethinkDB drivers
 sudo pip install flask rethinkdb
-sudo gem install bundler sinatra rethinkdb
+sudo gem install sinatra rethinkdb
 cd /home/vagrant/shared/express
-npm install
+sudo npm install
 SCRIPT
 
 Vagrant.configure(2) do |config|
