@@ -38,7 +38,7 @@ Vagrant.configure(2) do |config|
     vb.name = hostname
     vb.customize ["modifyvm", :id, "--memory", "512"]
     vb.customize ["modifyvm", :id, "--ioapic", "on"]
-    vb.customize ["modifyvm", :id, "--cpus", "1"]
+    vb.customize ["modifyvm", :id, "--cpus", "2"]
     vb.customize ["modifyvm", :id, "--ostype", "Ubuntu_64"]
   end
   
