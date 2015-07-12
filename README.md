@@ -14,7 +14,7 @@ cd vagrant-rethinkdb
 vagrant up
 ```
 
-Start a Express server
+Start an Express server
 ```bash
 vagrant ssh
 cd shared/express
